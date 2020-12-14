@@ -14,9 +14,11 @@
 		20DB0BD6257EE89D00A6C47E /* MyLittleHouseBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 20DB0BD4257EE89D00A6C47E /* MyLittleHouseBook.xcdatamodeld */; };
 		20DB0BD8257EE8A300A6C47E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20DB0BD7257EE8A300A6C47E /* Assets.xcassets */; };
 		20DB0BDB257EE8A300A6C47E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20DB0BD9257EE8A300A6C47E /* LaunchScreen.storyboard */; };
+		7868A2C5DC143354FE746779 /* Pods_MyLittleHouseBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A2CE7F21440FD42B815AB20 /* Pods_MyLittleHouseBook.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A2CE7F21440FD42B815AB20 /* Pods_MyLittleHouseBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyLittleHouseBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20DB0BC8257EE89D00A6C47E /* MyLittleHouseBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLittleHouseBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20DB0BCB257EE89D00A6C47E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20DB0BCD257EE89D00A6C47E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		20DB0BD7257EE8A300A6C47E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20DB0BDA257EE8A300A6C47E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20DB0BDC257EE8A300A6C47E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A7212BD77B4495E2705BB59 /* Pods-MyLittleHouseBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyLittleHouseBook.release.xcconfig"; path = "Target Support Files/Pods-MyLittleHouseBook/Pods-MyLittleHouseBook.release.xcconfig"; sourceTree = "<group>"; };
+		86F0DCF7AF3EC17E49C499ED /* Pods-MyLittleHouseBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyLittleHouseBook.debug.xcconfig"; path = "Target Support Files/Pods-MyLittleHouseBook/Pods-MyLittleHouseBook.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7868A2C5DC143354FE746779 /* Pods_MyLittleHouseBook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A894CA2ED48DAE375827B62 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A2CE7F21440FD42B815AB20 /* Pods_MyLittleHouseBook.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		20DB0BBF257EE89D00A6C47E = {
 			isa = PBXGroup;
 			children = (
 				20DB0BCA257EE89D00A6C47E /* MyLittleHouseBook */,
 				20DB0BC9257EE89D00A6C47E /* Products */,
+				FD05924B1EE9DCEFAEC8D23B /* Pods */,
+				1A894CA2ED48DAE375827B62 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +85,16 @@
 			path = MyLittleHouseBook;
 			sourceTree = "<group>";
 		};
+		FD05924B1EE9DCEFAEC8D23B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86F0DCF7AF3EC17E49C499ED /* Pods-MyLittleHouseBook.debug.xcconfig */,
+				5A7212BD77B4495E2705BB59 /* Pods-MyLittleHouseBook.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20DB0BDF257EE8A300A6C47E /* Build configuration list for PBXNativeTarget "MyLittleHouseBook" */;
 			buildPhases = (
+				834025BF58A92045ADC2F67F /* [CP] Check Pods Manifest.lock */,
 				20DB0BC4257EE89D00A6C47E /* Sources */,
 				20DB0BC5257EE89D00A6C47E /* Frameworks */,
 				20DB0BC6257EE89D00A6C47E /* Resources */,
+				F8BDDA9A5C4047F6DFA82EF8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		834025BF58A92045ADC2F67F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyLittleHouseBook-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8BDDA9A5C4047F6DFA82EF8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyLittleHouseBook/Pods-MyLittleHouseBook-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyLittleHouseBook/Pods-MyLittleHouseBook-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyLittleHouseBook/Pods-MyLittleHouseBook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		20DB0BC4257EE89D00A6C47E /* Sources */ = {
@@ -286,6 +355,7 @@
 		};
 		20DB0BE0257EE8A300A6C47E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86F0DCF7AF3EC17E49C499ED /* Pods-MyLittleHouseBook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -303,6 +373,7 @@
 		};
 		20DB0BE1257EE8A300A6C47E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A7212BD77B4495E2705BB59 /* Pods-MyLittleHouseBook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
