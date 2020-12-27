@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Unt-XY-udZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Unt-XY-udZ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,8 +17,8 @@
                     <view key="view" contentMode="scaleToFill" id="sWm-BQ-kLA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Gvz-aA-PAC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Post" image="plus.rectangle.fill" catalog="system" id="qyP-AV-lZy"/>
                 </viewController>
@@ -31,8 +33,8 @@
                     <view key="view" contentMode="scaleToFill" id="lfj-cb-9HV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="gzh-wf-Q3A"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Me" image="person.fill" catalog="system" id="Uwm-xg-tfc"/>
                 </viewController>
@@ -47,8 +49,8 @@
                     <view key="view" contentMode="scaleToFill" id="a0N-Rh-YCL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="OFF-HU-4Jk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Message" image="message.fill" catalog="system" id="NcX-os-2Jl"/>
                 </viewController>
@@ -63,8 +65,8 @@
                     <view key="view" contentMode="scaleToFill" id="UhQ-PT-EXL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="KI1-j0-jCt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Shop" image="cart.fill" catalog="system" id="HQ4-dh-KTh"/>
                 </viewController>
@@ -72,21 +74,134 @@
             </objects>
             <point key="canvasLocation" x="2138" y="-303"/>
         </scene>
+        <!--DiscoveryVC-->
+        <scene sceneID="GsK-sY-jhX">
+            <objects>
+                <viewController storyboardIdentifier="DiscoveryVCID" id="Zcd-fY-7FC" customClass="DiscoveryVC" customModule="MyLittleHouseBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SqS-1H-6pU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="aHg-Oq-U5C" customClass="ButtonBarView" customModule="XLPagerTabStrip">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="U5z-2Q-Yia"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="RFo-fs-gsQ">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vEr-yG-9Bn">
+                                <rect key="frame" x="0.0" y="96" width="414" height="800"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="aKe-VU-Zan"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="bmm-17-h2R"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QEc-0k-K3W"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vEr-yG-9Bn" firstAttribute="trailing" secondItem="QEc-0k-K3W" secondAttribute="trailing" id="0nU-eo-agU"/>
+                            <constraint firstItem="vEr-yG-9Bn" firstAttribute="top" secondItem="aHg-Oq-U5C" secondAttribute="bottom" constant="8" symbolic="YES" id="SQI-qV-6iB"/>
+                            <constraint firstItem="aHg-Oq-U5C" firstAttribute="leading" secondItem="QEc-0k-K3W" secondAttribute="leading" id="T9s-xh-X0r"/>
+                            <constraint firstAttribute="bottom" secondItem="vEr-yG-9Bn" secondAttribute="bottom" id="hLZ-og-bhM"/>
+                            <constraint firstItem="aHg-Oq-U5C" firstAttribute="trailing" secondItem="QEc-0k-K3W" secondAttribute="trailing" id="nj1-0y-V6o"/>
+                            <constraint firstItem="vEr-yG-9Bn" firstAttribute="leading" secondItem="QEc-0k-K3W" secondAttribute="leading" id="w3q-fa-26S"/>
+                            <constraint firstItem="aHg-Oq-U5C" firstAttribute="top" secondItem="QEc-0k-K3W" secondAttribute="top" id="wnX-uP-NvD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonBarView" destination="aHg-Oq-U5C" id="wZe-Pm-yh3"/>
+                        <outlet property="containerView" destination="vEr-yG-9Bn" id="Ww1-6u-Ret"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nhj-dz-Zho" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="485.50724637681162" y="-303.34821428571428"/>
+        </scene>
+        <!--FollowVC-->
+        <scene sceneID="nhT-zW-NDg">
+            <objects>
+                <viewController storyboardIdentifier="FollowVCID" id="6tI-RR-C7A" customClass="FollowVC" customModule="MyLittleHouseBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="82A-tJ-80z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="g5h-h9-Jzw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PFh-Pa-ba4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1193" y="-1092"/>
+        </scene>
+        <!--NearbyVC-->
+        <scene sceneID="0dL-8g-YvI">
+            <objects>
+                <viewController storyboardIdentifier="NearbyVCID" id="jJE-ff-TDo" customClass="NearbyVC" customModule="MyLittleHouseBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T7X-oD-eew">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ewX-7A-vPb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="INO-Pe-0qq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1823" y="-1083"/>
+        </scene>
         <!--Home-->
         <scene sceneID="oNG-d4-C5Z">
             <objects>
-                <viewController id="uyz-ex-2ki" sceneMemberID="viewController">
+                <viewController id="uyz-ex-2ki" customClass="HomeVC" customModule="MyLittleHouseBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zzk-3r-zzf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="J9G-6t-T6E" customClass="ButtonBarView" customModule="XLPagerTabStrip">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="b6B-QP-8Oz"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="91v-3H-1KI">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" bounces="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zw1-sO-xd2">
+                                <rect key="frame" x="0.0" y="96" width="414" height="717"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Uoa-ef-VgX"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="k4v-wq-buZ"/>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="8Yy-QQ-rPW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Zw1-sO-xd2" firstAttribute="top" secondItem="J9G-6t-T6E" secondAttribute="bottom" id="5UF-8A-eve"/>
+                            <constraint firstItem="Zw1-sO-xd2" firstAttribute="leading" secondItem="8Yy-QQ-rPW" secondAttribute="leading" id="Cob-n1-gGG"/>
+                            <constraint firstItem="J9G-6t-T6E" firstAttribute="leading" secondItem="8Yy-QQ-rPW" secondAttribute="leading" id="Sgw-EV-O15"/>
+                            <constraint firstItem="Zw1-sO-xd2" firstAttribute="bottom" secondItem="8Yy-QQ-rPW" secondAttribute="bottom" id="VQL-gn-IG7"/>
+                            <constraint firstItem="J9G-6t-T6E" firstAttribute="top" secondItem="8Yy-QQ-rPW" secondAttribute="top" id="Z9e-Af-Kt2"/>
+                            <constraint firstItem="8Yy-QQ-rPW" firstAttribute="trailing" secondItem="J9G-6t-T6E" secondAttribute="trailing" id="mQ9-5G-hlm"/>
+                            <constraint firstItem="Zw1-sO-xd2" firstAttribute="trailing" secondItem="8Yy-QQ-rPW" secondAttribute="trailing" id="sfD-Im-yLC"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="xUz-dz-2IR"/>
+                    <connections>
+                        <outlet property="buttonBarView" destination="J9G-6t-T6E" id="X0O-RA-fn6"/>
+                        <outlet property="containerView" destination="Zw1-sO-xd2" id="8fl-dn-8pm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MfS-bz-RA3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1194" y="-303"/>
+            <point key="canvasLocation" x="1192.753623188406" y="-303.34821428571428"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="SOM-0B-Rx2">
@@ -113,13 +228,16 @@
         </scene>
     </scenes>
     <resources>
-        <image name="cart.fill" catalog="system" width="64" height="50"/>
-        <image name="house.fill" catalog="system" width="64" height="52"/>
-        <image name="message.fill" catalog="system" width="64" height="56"/>
-        <image name="person.fill" catalog="system" width="64" height="60"/>
-        <image name="plus.rectangle.fill" catalog="system" width="64" height="46"/>
+        <image name="cart.fill" catalog="system" width="128" height="102"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="message.fill" catalog="system" width="128" height="113"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="plus.rectangle.fill" catalog="system" width="128" height="93"/>
         <namedColor name="TabbarTint">
-            <color red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.18600000441074371" blue="0.57300001382827759" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

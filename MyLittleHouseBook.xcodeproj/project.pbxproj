@@ -3,13 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		204C3686258876740009DEC3 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204C3685258876740009DEC3 /* HomeVC.swift */; };
+		204C368925889D5E0009DEC3 /* FollowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204C368825889D5E0009DEC3 /* FollowVC.swift */; };
+		204C368C25889D7D0009DEC3 /* DiscoveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204C368B25889D7D0009DEC3 /* DiscoveryVC.swift */; };
+		204C368F25889D9F0009DEC3 /* NearbyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204C368E25889D9F0009DEC3 /* NearbyVC.swift */; };
+		204C36922588A0080009DEC3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204C36912588A0080009DEC3 /* Constants.swift */; };
 		20DB0BCC257EE89D00A6C47E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DB0BCB257EE89D00A6C47E /* AppDelegate.swift */; };
 		20DB0BCE257EE89D00A6C47E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DB0BCD257EE89D00A6C47E /* SceneDelegate.swift */; };
-		20DB0BD0257EE89D00A6C47E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DB0BCF257EE89D00A6C47E /* ViewController.swift */; };
 		20DB0BD3257EE89D00A6C47E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20DB0BD1257EE89D00A6C47E /* Main.storyboard */; };
 		20DB0BD6257EE89D00A6C47E /* MyLittleHouseBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 20DB0BD4257EE89D00A6C47E /* MyLittleHouseBook.xcdatamodeld */; };
 		20DB0BD8257EE8A300A6C47E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20DB0BD7257EE8A300A6C47E /* Assets.xcassets */; };
@@ -19,10 +23,14 @@
 
 /* Begin PBXFileReference section */
 		1A2CE7F21440FD42B815AB20 /* Pods_MyLittleHouseBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyLittleHouseBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		204C3685258876740009DEC3 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		204C368825889D5E0009DEC3 /* FollowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowVC.swift; sourceTree = "<group>"; };
+		204C368B25889D7D0009DEC3 /* DiscoveryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryVC.swift; sourceTree = "<group>"; };
+		204C368E25889D9F0009DEC3 /* NearbyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyVC.swift; sourceTree = "<group>"; };
+		204C36912588A0080009DEC3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		20DB0BC8257EE89D00A6C47E /* MyLittleHouseBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLittleHouseBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20DB0BCB257EE89D00A6C47E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20DB0BCD257EE89D00A6C47E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		20DB0BCF257EE89D00A6C47E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		20DB0BD2257EE89D00A6C47E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		20DB0BD5257EE89D00A6C47E /* MyLittleHouseBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyLittleHouseBook.xcdatamodel; sourceTree = "<group>"; };
 		20DB0BD7257EE8A300A6C47E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,6 +60,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		204C36952588A1C00009DEC3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				204C3685258876740009DEC3 /* HomeVC.swift */,
+				204C368B25889D7D0009DEC3 /* DiscoveryVC.swift */,
+				204C368825889D5E0009DEC3 /* FollowVC.swift */,
+				204C368E25889D9F0009DEC3 /* NearbyVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		20DB0BBF257EE89D00A6C47E = {
 			isa = PBXGroup;
 			children = (
@@ -75,8 +94,9 @@
 			children = (
 				20DB0BCB257EE89D00A6C47E /* AppDelegate.swift */,
 				20DB0BCD257EE89D00A6C47E /* SceneDelegate.swift */,
-				20DB0BCF257EE89D00A6C47E /* ViewController.swift */,
 				20DB0BD1257EE89D00A6C47E /* Main.storyboard */,
+				204C36952588A1C00009DEC3 /* Home */,
+				204C36912588A0080009DEC3 /* Constants.swift */,
 				20DB0BD7257EE8A300A6C47E /* Assets.xcassets */,
 				20DB0BD9257EE8A300A6C47E /* LaunchScreen.storyboard */,
 				20DB0BDC257EE8A300A6C47E /* Info.plist */,
@@ -91,7 +111,6 @@
 				86F0DCF7AF3EC17E49C499ED /* Pods-MyLittleHouseBook.debug.xcconfig */,
 				5A7212BD77B4495E2705BB59 /* Pods-MyLittleHouseBook.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -210,10 +229,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20DB0BD0257EE89D00A6C47E /* ViewController.swift in Sources */,
 				20DB0BD6257EE89D00A6C47E /* MyLittleHouseBook.xcdatamodeld in Sources */,
+				204C3686258876740009DEC3 /* HomeVC.swift in Sources */,
+				204C368925889D5E0009DEC3 /* FollowVC.swift in Sources */,
 				20DB0BCC257EE89D00A6C47E /* AppDelegate.swift in Sources */,
 				20DB0BCE257EE89D00A6C47E /* SceneDelegate.swift in Sources */,
+				204C368C25889D7D0009DEC3 /* DiscoveryVC.swift in Sources */,
+				204C368F25889D9F0009DEC3 /* NearbyVC.swift in Sources */,
+				204C36922588A0080009DEC3 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
